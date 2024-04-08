@@ -1,4 +1,6 @@
 # Cochlear Web Quiz
+![Screenshot](https://github.com/dbeijer/cochlear-test/screenshot.png)
+
 
 ## Features
 - Web app built with jQuery
