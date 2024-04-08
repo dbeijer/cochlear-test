@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Quiz</title>
+		<link rel="stylesheet" href="css/default.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<div id="bg">
+			<div id="landing-page">
+				<h2>Welcome to the Quiz</h2>
+				<p>This quiz contains three questions. You will be asked them one at a time. Good luck!</p>
+				<button id="start-quiz">Start</button>
+			</div>
+
+			<div id="quiz-wrapper" class="glow">
+				<span class="close">&times;</span>
+				<div class="progress-bar">
+					<div id="progress-bar-fill" class="progress-bar-fill"></div>
+				</div>
+				<div id="warning-box" style="display: none;">
+					<p id="warning"></p>
+				</div>
+				<div id="quiz-container"></div>
+			</div>
+
+			<div id="result-page" class="glow">
+				<span class="close">&times;</span>
+				<h2>Quiz Result</h2>
+				<p>You got <span id="correctCount">0</span> out of <span id="ofTotal">0</span> questions correct.</p>
+				<div id="incorrectAnswers">
+					<h3>Your Answers:</h3>
+					<ul id="incorrectList"></ul>
+				</div>
+				<button id="restart-quiz">Restart</button>
+			</div>
+		</div>
+		<script src="js/quiz.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0e111f;
+
+	background-image: url(../img/bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	overflow: hidden;
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+	#quiz-wrapper, #result-page {
+		width: 600px;
+		margin-left: -300px;
+	}
+}
+
+/* mid range devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #quiz-wrapper, #result-page {
+		width: 500px;
+		margin-left: -270px;
+	}
+}
+
+/* mobiles */
+@media (max-width: 767px){
+    #quiz-wrapper, #result-page {
+		width: 310px;
+		margin-left: -175px;
+	}
+}
+
+@media screen and (orientation: landscape) {
+    #quiz-wrapper, #result-page {
+		top: 10%;
+	}
+	h3 {
+		font-size:1.4em;
+	}
+	p, span, label {
+		font-size:1.0em;
+	}
+	.spacer {
+		margin-bottom: 5px;
+	}
+	#warning-box {
+		padding: 1px 5px;
+		margin-bottom: 1px;
+	}
+	p#warning {
+		font-size: 0.8em;
+	}
+	li {
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    #quiz-wrapper, #result-page {
+		top: 2%;
+	}
+	h3 {
+		font-size:1.2em;
+	}
+	p, span, label {
+		font-size:0.9em;
+	}
+	li {
+		margin-bottom: 4px;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	#quiz-wrapper, #result-page {
+		top: 26%;
+	}
+	h3 {
+		font-size:1.6em;
+	}
+	p, span, label {
+		font-size:1.2em;
+	}
+	.spacer {
+		margin-bottom: 10px;
+	}
+	#warning-box {
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+	p#warning {
+		font-size: 1em;
+	}
+	li {
+		margin-bottom: 10px;
+	}
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#landing-page {
+	width: 100%;
+	background-color: rgba(23,23,23,0.93);
+	padding: 20px;
+	text-align: center;
+	margin: 30px 0px;
+	height: auto;
+}
+
+#quiz-wrapper, #result-page {
+	position: absolute;
+	left:50%;
+	background: linear-gradient(45deg, #171717, #373737);
+	border-radius: 10px;
+}
+
+#quiz-wrapper {
+	padding: 40px 20px 5px 20px;
+}
+
+#result-page {
+	display: none;
+	padding: 0px 10px 5px 20px;
+}
+
+#quiz-container {
+
+	margin: 0 auto;
+	padding: 0px;
+	display: none;
+}
+
+.question {
+	display: none;
+	margin-bottom: 20px;
+}
+
+.progress-bar {
+	background-color: #f0f0f0;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.progress-bar-fill {
+	background-color: #007bff;
+	height: 20px;
+	border-radius: 5px;
+	transition: width 0.5s ease;
+}
+
+h2 {
+	font-size:2em;
+	font-family: 'Montserrat', Arial, sans-serif;
+}
+h3 {
+	font-family: 'Montserrat', Arial, sans-serif;
+}
+p, span, label {
+	font-family: 'Merriweather', serif;
+}
+h2, h3, p, span, label, button {
+	color: rgb(233,233,233);
+}
+
+
+.glow {
+	box-shadow: 0px 0px 20px 0px rgba(104, 228, 242, 0.28);
+}
+
+.correct {color: #45803d;}
+.wrong {color: #fc6f79;}
+
+#warning-box {
+  color: #fefefe;
+  background-color: #fc6f79;
+  border-color: #f5c6cb;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+button {
+  background-color: #447d87;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #356f77;
+  color: white;
+}
+
+button:active {
+  background-color: #255f67;
+  color: white;
+}
+
+button:disabled {
+  background-color: #447d87;
+  color: #ccc;
+}
+
+#bg {
+	background: rgba(255,255,255,0.0);
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#bgFade {
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
